@@ -1,0 +1,358 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-color: #FFF9EB;
+}
+
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    padding: 1px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+
+header .navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+header .navbar ul li {
+    position: relative;
+}
+
+header .navbar ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    padding: 18px;
+    color: #333;
+    display: block;
+    white-space: nowrap;
+}
+
+header .navbar ul li a:hover {
+    background: #ffffff;
+    color: #f9c13e;
+}
+
+
+/*---------------------------------------- Dropdown menu----------------------------------------- */
+header .navbar ul li ul {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 200px;
+    background: #fff;
+    display: none;
+    z-index: 999;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    padding: 0; 
+}
+
+header .navbar ul li ul li {
+    width: 100%;
+    border-top: 1px solid #ccc;
+}
+
+header .navbar ul li:hover > ul, 
+header .navbar ul li:focus-within > ul {
+    display: block;
+}
+
+header .navbar ul li a {
+    padding: 18px 20px; 
+}
+
+header .navbar ul li {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*------------------------------------------ Logo ------------------------------------------*/
+.honning-logo {
+    width: 20vw;
+}
+/*-----------------------------------------Bannari mynd-------------------------------------*/
+
+.banner {
+    position: relative;
+    overflow: hidden;
+}
+
+.banner-img {
+    width: 100%; 
+    height: auto;
+}
+
+.banner-overlay {
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #deb887;
+    opacity: 30%;
+    z-index: 1; 
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; 
+    font-size: 3em; 
+    z-index: 2; 
+    text-align: center;
+}
+
+/*---------------------------------Bannari mynd lidugt-------------------*/
+
+/*------------------------------------Uppskrift boksir----------------------------------*/
+
+.boxes {
+    display: flex; 
+    justify-content: space-around;
+    margin: 80px;
+    margin-top: 40px;
+    
+}
+
+.box {
+    flex: 1; 
+    margin: 0 40px; 
+    text-align: center; 
+    background-color: #fff;
+}
+
+.box-img {
+    width: 100%; 
+    height: auto;
+    border: 30px solid white;
+}
+
+.box-title {
+    margin-top: 10px; 
+    font-size: 1.5em; 
+    color: #333; 
+}
+
+.article, p {
+    margin: 40px;
+    text-align: left;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: normal;
+}
+
+/*------------------------------Uppskrift boks---------------------------------*/
+/*------------------------------næmt & godt---------------------------------------*/
+.godt{
+    text-align: center;
+    font-size: 40px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+
+/*------------------------------Opskrifter--------------------------------------------------*/
+
+.nemt {
+    font-size: 2em;
+    margin-bottom: 20px; 
+    text-align: center; 
+    margin-top: 160px;
+    font-size: 40px;
+}
+
+/*------------------------------Opskrifter liðugt---------------------------------------*/
+/*---------------------------------------artiklar---------------------------------------*/
+.artikel-img{
+    width: 30%;
+    margin-left: 80px;
+    margin-right: 60px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border: 30px solid white;
+  
+}
+
+.artikel-2-img{
+    width: 30%;
+    margin-left: 80px;
+    margin-right: 60px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border: 30px solid white;
+}
+
+.artikler{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+    margin-top: 80px;
+    flex: 1;
+    text-align: center;
+    position: relative;
+    padding: 20px;
+    /*---font-family: ;---*/
+}
+
+.artikler-2{
+    display: flex;
+    justify-content: space-around;
+    margin-left: 30px;
+    margin-right: 0px;
+    margin-top: 0px;
+    flex: 1;
+    flex-direction: row-reverse;
+    text-align: left;
+    position: relative;
+    padding: 50px;
+    /*---font-family: ;---*/
+}
+
+.background-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    object-fit: cover;
+   
+}
+
+.artikel-img,
+p {
+    position: relative;
+    z-index: 2;
+}
+
+.artikel-text {
+    line-height: 1.6;
+    max-width: 900px;
+    margin: 0 auto;
+    font-family: 'Arial', sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    text-align: left;
+    color: #333;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.artikel-overskrift {
+    
+    position: relative;
+    z-index: 2;
+}
+
+.læs-mere {
+    border: none;
+    color: #ff9500;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 100;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/*----------------------------------------artiklar liðigt--------------------------------------*/
+
+/*----------------------------------------artikkul um søvn--------------------------------------*/
+
+.sundhed-artikler {
+    margin: 100px;
+    margin-left: 200px;
+    margin-right: 200px;
+    justify-content: space-around;
+}
+
+.sundhed-p {
+    margin: 15px;
+    margin-bottom: 40px;
+    justify-content: space-around;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: normal;
+    font-size: 17px; 
+    line-height: 1.5; 
+}
+
+
+/*----------------------------------------artikkul um søvn liðigt--------------------------------------*/
+
+/*--------------------------------footer---------------------------------------------------*/
+
+footer {
+    background-color: #fff;
+    color: white;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-left, .footer-right {
+    flex: 1;
+}
+
+.footer-left p, .footer-right a {
+    margin: 5px 0;
+    color: #333;
+    text-decoration: none;
+}
+
+.footer-right {
+    text-align: right;
+}
+
+.footer-right a:hover {
+    color: #f9c13e;
+}
+
+.footer-center {
+    flex: 0 1 150px; /* Styrer logoets bredde */
+    text-align: center;
+}
+
+.footer-logo {
+    max-width: 100%;
+    height: auto;
+}
+
+/*---------------------------------------footer liðugt----------------------------------------------*/
