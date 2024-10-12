@@ -206,31 +206,67 @@ header .navbar ul li {
     border: 30px solid white;
 }
 
-.artikler{
+.madplan-img {
+    width: 35 0px;
+    margin-left: 0px;
+    margin-right: 60px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    border: 30px solid white;
+}
+
+.artikler {
     display: flex;
     justify-content: space-around;
-    margin: 20px;
+    margin: 30px;
     margin-top: 80px;
     flex: 1;
     text-align: center;
     position: relative;
     padding: 20px;
-    /*---font-family: ;---*/
+    background: url(../img/gul-bagrund.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .artikler-2{
     display: flex;
     justify-content: space-around;
-    margin-left: 30px;
-    margin-right: 0px;
-    margin-top: 0px;
+    margin: 30px;
+    margin-top: 80px;
     flex: 1;
-    flex-direction: row-reverse;
-    text-align: left;
+    text-align: center;
     position: relative;
-    padding: 50px;
-    /*---font-family: ;---*/
+    padding: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-direction: row-reverse;
 }
+
+.madplan-artikel {
+    display: flex;
+    justify-content: space-around;
+    margin: 0px;
+    margin-top: 5px;
+    flex: 1;
+    text-align: center;
+    position: relative;
+    padding: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.article, p {
+    margin: 10px;
+    text-align: left;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: normal;
+    font-size: 20px;
+}
+
 
 .background-img {
     position: absolute;
@@ -242,6 +278,18 @@ header .navbar ul li {
     object-fit: cover;
    
 }
+
+#top-artikel-img {
+    width: 480px;
+    height: auto;
+}
+
+.artikler-section-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 
 .artikel-img,
 p {
@@ -283,6 +331,10 @@ p {
     border-radius: 5px;
 }
 
+#checkbox {
+
+}
+
 /*----------------------------------------artiklar liðigt--------------------------------------*/
 
 /*----------------------------------------artikkul um søvn--------------------------------------*/
@@ -306,6 +358,40 @@ p {
 
 
 /*----------------------------------------artikkul um søvn liðigt--------------------------------------*/
+
+
+.opskrift-img{
+    width: 30%;
+    margin-left: 80px;
+    margin-right: 60px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border: 30px solid white;
+  
+}
+.opskrift {
+    display: flex;
+    justify-content: space-around;
+    margin: 30px;
+    margin-top: 80px;
+    flex: 1;
+   
+    position: relative;
+    padding: 20px;
+    background: url(../img/gul-bagrund.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.opskrift-section-2 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: left;
+}
+
+
 
 /*--------------------------------footer---------------------------------------------------*/
 
