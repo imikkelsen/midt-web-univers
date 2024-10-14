@@ -174,9 +174,6 @@ header .navbar ul li {
     margin-bottom: 60px;
 }
 
-
-/*------------------------------Opskrifter--------------------------------------------------*/
-
 .nemt {
     font-size: 2em;
     margin-bottom: 20px; 
@@ -185,14 +182,14 @@ header .navbar ul li {
     font-size: 40px;
 }
 
-/*------------------------------Opskrifter liðugt---------------------------------------*/
-/*---------------------------------------artiklar---------------------------------------*/
+
+/*---------------------------------------artikler---------------------------------------*/
 .artikel-img{
     width: 30%;
     margin-left: 80px;
     margin-right: 60px;
     margin-top: 40px;
-    margin-bottom: 40px;
+    
     border: 30px solid white;
   
 }
@@ -206,19 +203,27 @@ header .navbar ul li {
     border: 30px solid white;
 }
 
-.madplan-img {
-    width: 35 0px;
-    margin-left: 0px;
-    margin-right: 60px;
-    margin-top: 10px;
-    margin-bottom: 40px;
-    border: 30px solid white;
+.artikler-3 {
+    background: url(../img/gul-bagrund.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 50px;
+    
 }
+
+.artikler-3-p {
+    margin-left: 120px;
+    margin-right: 50px;
+    padding-bottom: 40px;
+}
+
 
 .artikler {
     display: flex;
     justify-content: space-around;
-    margin: 30px;
+    margin-right: 30px;
+    margin-left: 30px;
     margin-top: 80px;
     flex: 1;
     text-align: center;
@@ -235,6 +240,7 @@ header .navbar ul li {
     justify-content: space-around;
     margin: 30px;
     margin-top: 80px;
+    margin-bottom: 30px;
     flex: 1;
     text-align: center;
     position: relative;
@@ -288,6 +294,7 @@ header .navbar ul li {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-right: 0px;
 }
 
 
@@ -312,7 +319,9 @@ p {
 }
 
 .artikel-overskrift {
-    
+    margin-top: 40px;
+    margin-bottom: 10px;
+    text-align: center;
     position: relative;
     z-index: 2;
 }
@@ -331,18 +340,23 @@ p {
     border-radius: 5px;
 }
 
-#checkbox {
-
-}
-
 /*----------------------------------------artiklar liðigt--------------------------------------*/
 
-/*----------------------------------------artikkul um søvn--------------------------------------*/
+.madplan-img {
+    width: 350px;
+    margin-left: 0px;
+    margin-right: 5px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    border: 30px solid white;
+}
 
+/*----------------------------------------sundhesd artikler--------------------------------------*/
 .sundhed-artikler {
     margin: 100px;
     margin-left: 200px;
     margin-right: 200px;
+    margin-top: 50px;
     justify-content: space-around;
 }
 
@@ -357,8 +371,8 @@ p {
 }
 
 
-/*----------------------------------------artikkul um søvn liðigt--------------------------------------*/
-
+/*-----------------------------------------sundhed artikler liðigt---------------------------------------*/
+/*-----------------------------------------opskrifter----------------------------------------------------*/
 
 .opskrift-img{
     width: 30%;
@@ -366,16 +380,15 @@ p {
     margin-right: 60px;
     margin-top: 40px;
     margin-bottom: 40px;
-    border: 30px solid white;
-  
+    border: 30px solid white;  
 }
+
 .opskrift {
     display: flex;
     justify-content: space-around;
     margin: 30px;
     margin-top: 80px;
     flex: 1;
-   
     position: relative;
     padding: 20px;
     background: url(../img/gul-bagrund.jpg);
@@ -385,15 +398,34 @@ p {
 }
 
 .opskrift-section-2 {
+    margin-top: 30px;
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: left;
+    flex-direction: column;
+    align-items: stretch;
+    background-color: #fff;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
+.opskrift-section-2 ol {
+    margin: 15px;
+    margin-left: 50px;
+}
 
+.opskrift-section-2 ul {
+    margin: 15px;
+    margin-left: 50px;
+}
 
-/*--------------------------------footer---------------------------------------------------*/
+.opskrift-section-2 p {
+    margin: 15px;
+    margin-left: 20px;
+    font-size: 16px;
+}
+
+/*----------------------------------------opskrifter liðigt----------------------------------------*/
+/*----------------------------------------footer---------------------------------------------------*/
 
 footer {
     background-color: #fff;
